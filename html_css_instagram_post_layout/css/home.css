@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('./styles.css'); /* Tag and Class Styles! */
+
+/* Tag Styles! */
+/* 
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+} */
+
+body {
+	background-color: black;
+    margin: 0;
+}
+
+button{
+	background-color: white;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
