@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/072e5df971.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-black w-100 vh-100 d-flex justify-content-center align-items-center"
+  >
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-9 col-lg-8 mx-auto">
+          <div class="card bg-black text-light">
+            <div
+              class="row card-title bg-dark rounded-top m-0 border-2 border-bottom border-info-subtle"
+            >
+              <div class="col-9">
+                <h3>Payment Form Example</h3>
+              </div>
+              <div class="col-3 text-end sign">Emanuel Mejía</div>
+            </div>
+            <div class="row card-body bg-dark rounded-bottom m-0">
+              <div class="row d-flex">
+                <div class="col-5">
+                  <label for="cardNum">Card #:</label><br />
+                  <input
+                    class="col-12"
+                    type="Text"
+                    name="cardNum"
+                    placeholder="XXXXXXXXXXXXXXXX"
+                    maxlength="16"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="cvc">CVC:</label><br />
+                  <input
+                    class="col-12"
+                    type="password"
+                    name="cvc"
+                    placeholder="0000"
+                    maxlength="4"
+                  />
+                </div>
+                <div class="col-4">
+                  <label for="amnt">Amount</label><br />
+                  <span>$</span>
+                  <input
+                    class="col-11"
+                    type="number"
+                    name="amnt"
+                    placeholder="0.00"
+                    min="0"
+                    step=".01"
+                  />
+                </div>
+              </div>
+              <div class="row d-flex mt-3">
+                <div class="col-6">
+                  <label for="firstName">First Name:</label><br />
+                  <input
+                    class="col-12"
+                    type="Text"
+                    name="firstName"
+                    placeholder="John"
+                    maxlength="40"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="lastName">Last Name:</label><br />
+                  <input
+                    class="col-12"
+                    type="Text"
+                    name="lastName"
+                    placeholder="Doe"
+                    maxlength="40"
+                  />
+                </div>
+              </div>
+              <div class="row d-flex mt-3">
+                <div class="col-6">
+                  <label for="city">City:</label><br />
+                  <input
+                    class="col-12"
+                    type="Text"
+                    name="city"
+                    placeholder="Sin City"
+                    maxlength="40"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="state">State:</label><br />
+                  <select name="state" id="" class="col-12 py-1">
+                    <option value="" class="text-secondary">
+                      Pick a State
+                    </option>
+                    <option value="1">State 1</option>
+                    <option value="2">State 2</option>
+                    <option value="3">State 3</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label for="zc">Zip Code:</label><br />
+                  <input
+                    class="col-12"
+                    type="Text"
+                    name="zc"
+                    placeholder="00000"
+                    maxlength="5"
+                  />
+                </div>
+              </div>
+              <div class="row d-flex mt-3">
+                <div class="col-4">
+                  <label for="cards">We accept:</label><br />
+                  <div
+                    class="col-12 bg-secondary rounded d-flex py-3 justify-content-center align-items-center"
+                  >
+                    <input type="radio" name="cards" id="cMaster" checked />
+                    <i class="fa-brands fa-cc-mastercard ms-1 me-3"></i>
+                    <input type="radio" name="cards" id="cVisa" />
+                    <i class="fa-brands fa-cc-visa ms-1 me-3"></i>
+                    <input type="radio" name="cards" id="cAmex" />
+                    <i class="fa-brands fa-cc-amex ms-1 me-3"></i>
+                    <input type="radio" name="cards" id="cPP" />
+                    <i class="fa-brands fa-cc-paypal ms-1 me-2"></i>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <label for="msg">Message:</label><br />
+                  <textarea
+                    name="msg"
+                    class="form-control"
+                    placeholder="Add any notes here"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row d-flex mt-3">
+                <div class="col-12 text-end">
+                  <button class="btn btn-outline-secondary ms-3" type="button">
+                    Cancel
+                  </button>
+                  <button
+                    class="btn btn-outline-success ms-3 px-3"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
